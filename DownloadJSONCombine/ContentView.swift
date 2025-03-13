@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var vm = DownloadWithCombine()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(vm.posts) { post in
+                VStack(alignment: .leading) {
+                    Text(post.title.capitalized)
+                        .fontWeight(.bold)
+                    
+                    Text(post.body)
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("Posts")
         }
-        .padding()
     }
 }
 

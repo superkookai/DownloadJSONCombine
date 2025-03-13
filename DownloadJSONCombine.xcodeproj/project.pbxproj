@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EFDF6DF82D827A5B00F93C4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDF6DF22D827A5B00F93C4E /* Preview Assets.xcassets */; };
+		EFDF6DF92D827A5B00F93C4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDF6DF42D827A5B00F93C4E /* Assets.xcassets */; };
+		EFDF6DFA2D827A5B00F93C4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF6DF52D827A5B00F93C4E /* ContentView.swift */; };
+		EFDF6DFB2D827A5B00F93C4E /* DownloadJSONCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF6DF62D827A5B00F93C4E /* DownloadJSONCombineApp.swift */; };
+		EFDF6DFE2D827A7A00F93C4E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF6DFD2D827A7A00F93C4E /* Post.swift */; };
+		EFDF6E002D827ADE00F93C4E /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF6DFF2D827ADE00F93C4E /* DownloadWithCombine.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EFDF6DE12D827A5100F93C4E /* DownloadJSONCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadJSONCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDF6DF22D827A5B00F93C4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFDF6DF42D827A5B00F93C4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFDF6DF52D827A5B00F93C4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFDF6DF62D827A5B00F93C4E /* DownloadJSONCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadJSONCombineApp.swift; sourceTree = "<group>"; };
+		EFDF6DFD2D827A7A00F93C4E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EFDF6DFF2D827ADE00F93C4E /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		EFDF6DE32D827A5100F93C4E /* DownloadJSONCombine */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DownloadJSONCombine;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EFDF6DDE2D827A5100F93C4E /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		EFDF6DD82D827A5100F93C4E = {
 			isa = PBXGroup;
 			children = (
-				EFDF6DE32D827A5100F93C4E /* DownloadJSONCombine */,
+				EFDF6DF72D827A5B00F93C4E /* DownloadJSONCombine */,
 				EFDF6DE22D827A5100F93C4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,35 @@
 				EFDF6DE12D827A5100F93C4E /* DownloadJSONCombine.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EFDF6DF32D827A5B00F93C4E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFDF6DF22D827A5B00F93C4E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFDF6DF72D827A5B00F93C4E /* DownloadJSONCombine */ = {
+			isa = PBXGroup;
+			children = (
+				EFDF6DFC2D827A6B00F93C4E /* Model */,
+				EFDF6DF52D827A5B00F93C4E /* ContentView.swift */,
+				EFDF6DF62D827A5B00F93C4E /* DownloadJSONCombineApp.swift */,
+				EFDF6DF42D827A5B00F93C4E /* Assets.xcassets */,
+				EFDF6DF32D827A5B00F93C4E /* Preview Content */,
+			);
+			path = DownloadJSONCombine;
+			sourceTree = "<group>";
+		};
+		EFDF6DFC2D827A6B00F93C4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFDF6DFD2D827A7A00F93C4E /* Post.swift */,
+				EFDF6DFF2D827ADE00F93C4E /* DownloadWithCombine.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +95,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				EFDF6DE32D827A5100F93C4E /* DownloadJSONCombine */,
 			);
 			name = DownloadJSONCombine;
 			packageProductDependencies = (
@@ -109,6 +142,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDF6DF82D827A5B00F93C4E /* Preview Assets.xcassets in Resources */,
+				EFDF6DF92D827A5B00F93C4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDF6DFE2D827A7A00F93C4E /* Post.swift in Sources */,
+				EFDF6E002D827ADE00F93C4E /* DownloadWithCombine.swift in Sources */,
+				EFDF6DFA2D827A5B00F93C4E /* ContentView.swift in Sources */,
+				EFDF6DFB2D827A5B00F93C4E /* DownloadJSONCombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
